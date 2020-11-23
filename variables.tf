@@ -5,7 +5,7 @@ variable "region" {
 
 variable "project_id" {
   type    = string
-  default = "doc-20200910120159"
+  default = "doc-cf-gke"
 }
 
 variable "cluster_name" {
@@ -35,17 +35,15 @@ variable "preemptible" {
 
 variable "billing_account_id" {
   type    = string
-  default = ""
+  default = "01752E-CE7D0E-CD5ED3"
 }
 
 variable "k8s_version" {
   type    = string
-  default = "1.17.12-gke.1501"
+  default = "1.17.13-gke.2600"
 }
 
 variable "destroy" {
   type    = bool
-  default = true
+  default = false
 }
-
-
